@@ -1,0 +1,20 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: -300px;   
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 20px 0px 20px 0px;
+    border: none;
+    background-color: blue;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
