@@ -3,8 +3,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin-top: -300px;   
+    height: auto;
+    margin-top: -100px;   
 }
 
 button {
@@ -18,19 +18,19 @@ button {
     cursor: pointer;
 }
 
+.boton:hover {
+    background-color: blueviolet; /* Cambia el color de fondo al pasar el mouse por encima */
+}
+
 #encabezado {
-    .container {
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        height: 100vh;
-        margin-top: -300px;   
+        height: 50vh;
+        margin-top: -100px;   
     }
 
-    #encabezado-tbn0 {
-        flex: 1;
-    }
 
     #parra {
         flex: 2;
@@ -38,4 +38,42 @@ button {
         font-size: 20px;
         font-weight: bold;
     }
-}
+
+    .contenedor {
+        display: flex;
+        justify-content: center; /* Separar a la izquierda y derecha */
+        align-items: center;
+        height: 50vh;
+        margin-top: -100px; 
+    }
+    
+    .izquierda {
+        width: 25%;
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+    }
+    
+    .derecha {
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    /* Añadir un margen superior al botón "Cancelar" para que esté debajo de "Otros servicios" */
+    .boton.cancelar {
+        margin-top: 20px;
+        background-color: gray;
+
+    }
+    .boton.cancelar:hover {
+        background-color: red;
+    }
+
+    .izquierda .boton {
+        margin-bottom: 34px; 
+    }
+
+
+    
